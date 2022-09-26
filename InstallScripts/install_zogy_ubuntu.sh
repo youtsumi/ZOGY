@@ -35,10 +35,10 @@ fi
 # check Linux version, update/upgrade it and set package manager
 # ================================================================================
 
+packman="apt-get"
 uname_str=$(uname -a)
 if [[ ${uname_str,,} == *"ubuntu"* ]]
 then
-    packman="apt-get"
     # update
     sudo ${packman} -y update
 fi
